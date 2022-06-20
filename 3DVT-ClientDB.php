@@ -22,7 +22,7 @@ register_activation_hook(__FILE__, "activate_myplugin");
 register_deactivation_hook(__FILE__,"deactivate_myplugin");
 
 function activate_myplugin(){
- add_action('admin_menu','test_plugin_setup_menu');
+ add_action('admin_menu','addClientMenu');
  addCustomRoles();
 }
 
@@ -66,14 +66,19 @@ function init_db_myplugin(){
 }
 
 
-function test_plugin_setup_menu(){
+function addClientMenu(){
   add_menu_page( 
-      'Page Title', 
-      'Menu Title', 
-      'edit_posts', 
-      'menu_slug', 
-      'page_callback_function', 
-      'dashicons-media-spreadsheet' 
+      'Forms', 
+      'Form Items', 
+      'manage_options', 
+      'client_menu', 
+      'client_menu_main', 
+      'dashicons-id',
+       1
+  );
+}
 
-     );}
+function client_menu_main(){
+ 
+}
 
