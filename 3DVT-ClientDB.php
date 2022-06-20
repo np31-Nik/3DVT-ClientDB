@@ -67,6 +67,13 @@ function init_db_myplugin(){
 
 
 function test_plugin_setup_menu(){
-    add_menu_page( 'Clients', 'Clients', 'manage_options', 'test-plugin', 'test_init' );
-}
+  add_menu_page( 
+      'Page Title', 
+      'Menu Title', 
+      'edit_posts', 
+      'menu_slug', 
+      'page_callback_function', 
+      'dashicons-media-spreadsheet' 
+
+     );}
 
