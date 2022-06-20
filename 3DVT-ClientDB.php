@@ -22,7 +22,6 @@ register_activation_hook(__FILE__, "activate_myplugin");
 register_deactivation_hook(__FILE__,"deactivate_myplugin");
 
 function activate_myplugin(){
- add_action('admin_menu','addClientMenu');
  addCustomRoles();
 }
 
@@ -65,6 +64,7 @@ function init_db_myplugin(){
     */
 }
 
+ add_action('admin_menu','addClientMenu');
 
 function addClientMenu(){
   add_menu_page( 
