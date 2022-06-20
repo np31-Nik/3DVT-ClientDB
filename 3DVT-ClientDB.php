@@ -32,15 +32,12 @@ function addCustomRoles(){
  $role = get_role('3DVT-ClientManager');
  
  $caps = array('3DVT_readClients', '3DVT_addClients', '3DVT_editClients', '3DVT_deleteClients');
-  $caps2 = array('readClients', 'addClients', 'editClients', 'deleteClients');
 
  foreach ($caps as $cap){
   $role->add_cap($cap);
  }
-  foreach ($caps2 as $cap){
-  $role->remove_cap($cap);
- }
 }
+
 function deactivate_myplugin(){
  
 }
@@ -70,6 +67,6 @@ function init_db_myplugin(){
 
 
 function test_plugin_setup_menu(){
-    add_menu_page( 'Clients', 'Clients', 'manage_options', 'test-plugin', 'test_init' );
+    add_menu_page( 'Clients', 'Clients', '3DVT_readClients', 'test-plugin', 'test_init' );
 }
 
