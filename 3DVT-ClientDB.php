@@ -22,9 +22,21 @@ register_activation_hook(__FILE__, "activate_myplugin");
 register_deactivation_hook(__FILE__,"deactivate_myplugin");
 
 function activate_myplugin(){
- 
+ add_action('admin_menu','test_plugin_setup_menu');
+ addCustomRoles();
 }
 
+function addCustomRoles(){
+ add_role('3DVT-ClientManager','Client Manager', get_role('rem_property_agent')->capabilities);
+ 
+ $role = get_role('3DVT-ClientManager');
+ 
+ $caps = array('readClients', 'addClients', 'editClients', 'deleteClients');
+ 
+ foreach ($caps as $cap){
+  $role->add_cap($cap);
+ }
+}
 function deactivate_myplugin(){
  
 }
@@ -52,9 +64,8 @@ function init_db_myplugin(){
     */
 }
 
-add_action('admin_menu','test_plugin_setup_menu');
 
 function test_plugin_setup_menu(){
-    add_menu_page( 'Test Plugin Page', 'Test Plugin', 'manage_options', 'test-plugin', 'test_init' );
+    add_menu_page( 'Clients', 'Clients', 'manage_options', 'test-plugin', 'test_init' );
 }
 
