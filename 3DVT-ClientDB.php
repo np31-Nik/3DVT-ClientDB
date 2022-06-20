@@ -64,7 +64,8 @@ function init_db_myplugin(){
     */
 }
 
- add_action('admin_menu','addClientMenu');
+
+add_action('admin_menu','addClientMenu');
 
 function addClientMenu(){
   add_menu_page( 
