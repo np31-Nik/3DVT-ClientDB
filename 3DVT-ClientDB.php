@@ -68,13 +68,13 @@ function init_db_myplugin(){
 
 function addClientMenu(){
   add_menu_page( 
-      'Forms', 
-      'Form Items', 
+      'Clients', 
+      'Clients', 
       'manage_options', 
       'client_menu', 
       'client_menu_main', 
       'dashicons-id',
-       1
+       5
   );
 }
 
