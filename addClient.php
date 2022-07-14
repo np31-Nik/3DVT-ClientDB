@@ -63,7 +63,7 @@ if(isset($_POST['but_submit'])){
             <td><input type='text' name='txt_comment'></td>
         </tr>
         <tr>
-            <td>$nbsp;</td>
+            <td>&nbsp;</td>
             <td><input type='submit' name='but_submit' value='Submit'></td>
         </tr>
     </table>
