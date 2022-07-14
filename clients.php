@@ -33,14 +33,25 @@ if(isset($_GET['delid'])){
     foreach($entriesList as $entry){
       $id = $entry->id;
       $name = $entry->name;
-      $uname = $entry->username;
-      $email = $entry->email;
+      $phone = $entry->phone;
+      $languages = $entry->languages;
+      $opertaion = $entry->operation;
+      $found = $entry->found;
+      $date = $entry->date;
+      $comment = $entry->comment;
+
+//not sure about $count
 
       echo "<tr>
-      <td>".$count."</td>
+      <td>".$count."</td> 
       <td>".$name."</td>
-      <td>".$uname."</td>
-      <td>".$email."</td>
+      <td>".$phone."</td>
+      <td>".$languages."</td>
+      <td>".$opertaion."</td>
+      <td>".$found."</td>
+      <td>".$date."</td>
+      <td>".$comment."</td>
+
       <td><a href='?page=allentries&delid=".$id."'>Delete</a></td>
       </tr>
       ";
