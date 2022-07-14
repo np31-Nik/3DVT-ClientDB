@@ -2,6 +2,7 @@
 
 global $wpdb
 
+//add Client
 if(isset($_POST['but-submit'])){
 
     $name = $_POST['txt_name'];
@@ -41,12 +42,12 @@ if(isset($_POST['but-submit'])){
         <tr>
             <td><label for='enum_opertaions'>Opertaion</label></td>
             <td>
-                <select name="enum_opertaions" id="operations">
+                <!-- <select name="enum_opertaions" id="operations">
                     <option value="sale">Sale</option>
                     <option value="rent">Rent</option>
                     <option value="holiday">Holiday</option>
                     <option value="other">Other</option>
-                </select>
+                </select> -->
             </td>
         </tr>
         <tr>
