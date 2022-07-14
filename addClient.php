@@ -2,21 +2,21 @@
 
 global $wpdb
 
-//add Client
-if(isset($_POST['but-submit'])){
+// //add Client
+// if(isset($_POST['but-submit'])){
 
-    $name = $_POST['txt_name'];
-    $phone = $_POST['txt_phone'];
-    $email = $_POST['txt_email'];
-    $opertaion = $_POST['enum_opertaions'];
-    $found = $_POST['txt_found'];
-    $date = $_POST['date_date'];
-    $comment = $_POST['txt_comment'];
+//     $name = $_POST['txt_name'];
+//     $phone = $_POST['txt_phone'];
+//     $email = $_POST['txt_email'];
+//     $opertaion = $_POST['enum_opertaions'];
+//     $found = $_POST['txt_found'];
+//     $date = $_POST['date_date'];
+//     $comment = $_POST['txt_comment'];
 
-    //validate (with simple if?)
-    //Insert client data
+//     //validate (with simple if?)
+//     //Insert client data
 
-}
+// }
 
 ?>
 
