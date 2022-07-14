@@ -3,23 +3,24 @@
 global $wpdb
 
 //add Client
-if(isset($_POST['but-submit'])){
+//contains error?
+// if(isset($_POST['but-submit'])){
 
-    $name = $_POST['txt_name'];
-    $phone = $_POST['txt_phone'];
-    $email = $_POST['txt_email'];
-    $opertaion = $_POST['enum_opertaions'];
-    $found = $_POST['txt_found'];
-    $date = $_POST['date_date'];
-    $comment = $_POST['txt_comment'];
+//     $name = $_POST['txt_name'];
+//     $phone = $_POST['txt_phone'];
+//     $email = $_POST['txt_email'];
+//     $opertaion = $_POST['enum_opertaions'];
+//     $found = $_POST['txt_found'];
+//     $date = $_POST['date_date'];
+//     $comment = $_POST['txt_comment'];
 
-    //validate (with simple if?)
-    //Insert client data
+//     //validate (with simple if?)
+//     //Insert client data
 
-}
+// }
 
 ?>
-<!-- 
+
 <h1>Add New Client</h1>
 <form action='post' action='' >
     <table>
@@ -67,4 +68,4 @@ if(isset($_POST['but-submit'])){
             <td><input type='submit' name='but_submit' value='Submit'></td>
         </tr>
     </table>
-</form> -->
+</form>
