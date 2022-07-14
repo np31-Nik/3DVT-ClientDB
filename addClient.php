@@ -19,7 +19,7 @@ global $wpdb
 // }
 
 ?>
-
+<!-- 
 <h1>Add New Client</h1>
 <form action='post' action='' >
     <table>
@@ -40,7 +40,7 @@ global $wpdb
             <td><input type='text' name='txt_languages'></td>
         </tr>
         <tr>
-            <!-- <td><label for='enum_opertaions'>Opertaion</label></td> -->
+            <td><label for='enum_opertaions'>Opertaion</label></td>
             <td>
                 <select name="enum_opertaions" id="operations">
                     <option value="sale">Sale</option>
@@ -67,4 +67,4 @@ global $wpdb
             <td><input type='submit' name='but_submit' value='Submit'></td>
         </tr>
     </table>
-</form>
+</form> -->
