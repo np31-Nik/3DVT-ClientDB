@@ -5,7 +5,7 @@
  /*
 Plugin Name: 3DVT Clients Database
 Description: Custom client database for agency Costa Soñada.
-Version: 1.0.8
+Version: 1.0.9
 Author: Costa Soñada
 */
 

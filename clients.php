@@ -17,12 +17,14 @@ if(isset($_GET['delid'])){
    <th>S.no</th>
    <th>Name</th>
    <th>Phone</th>
+   <th>Email</th>
    <th>Languages</th>
    <th>Operation</th>
    <th>Found</th>
    <th>Date</th>
    <th>Comment</th>
-   <th>&nbsp;</th>
+   <th>Actions</th>
+   <!-- <th>&nbsp;</th> -->
   </tr>
   <?php
   // Select records
@@ -34,6 +36,7 @@ if(isset($_GET['delid'])){
       $id = $entry->id;
       $name = $entry->name;
       $phone = $entry->phone;
+      $email = $entry->email;
       $languages = $entry->languages;
       $opertaion = $entry->operation;
       $found = $entry->found;
@@ -46,12 +49,13 @@ if(isset($_GET['delid'])){
       <td>".$count."</td> 
       <td>".$name."</td>
       <td>".$phone."</td>
+      <td>".$email."</td>
       <td>".$languages."</td>
       <td>".$opertaion."</td>
       <td>".$found."</td>
       <td>".$date."</td>
       <td>".$comment."</td>
-
+      
       <td><a href='?page=allentries&delid=".$id."'>Delete</a></td>
       </tr>
       ";
