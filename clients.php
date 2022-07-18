@@ -34,7 +34,7 @@ if(isset($_GET['delid'])){
         <th>Actions</th>
         <!-- <th>&nbsp;</th> -->
     </tr>
-    <?php
+  <?php
   // Select records
   // Change + add params from upside
   $entriesList = $wpdb->get_results("SELECT * FROM ".$tablename." order by id desc");
