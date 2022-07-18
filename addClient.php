@@ -21,7 +21,7 @@ if(isset($_POST['but_submit'])){
 ?>
 
 <h1>Add New Client</h1>
-<form action='post' action='' >
+<form action='post' style="margin: auto;" action='' >
     <table>
         <tr>
             <td>Name</td>
