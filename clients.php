@@ -73,6 +73,8 @@ if(isset($_GET['delid'])){
    }
  }else{
    echo "<tr><td colspan='5'>No record found</td></tr>";
+   echo "<tr><td><a href= "addClient.php" >link!</a></td></tr>";
+
  }
 ?>
 </table>
