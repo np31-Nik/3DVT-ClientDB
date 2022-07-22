@@ -1,6 +1,5 @@
 <?php
 
-
 register_activation_hook( __FILE__, 'crudOperationsTable');
 function crudOperationsTable() {
   global $wpdb;
@@ -20,7 +19,7 @@ function crudOperationsTable() {
 }
 add_action('admin_menu', 'addAdminPageContent');
 function addAdminPageContent() {
-  add_menu_page('CRUD', 'CRUD', 'manage_options' ,'crud_menu' 'crudAdminPage', 'dashicons-wordpress');
+  add_menu_page('CRUD', 'CRUD', 'manage_options' ,__FILE__, 'crudAdminPage', 'dashicons-wordpress');
 }
 function crudAdminPage() {
   global $wpdb;
@@ -43,8 +42,6 @@ function crudAdminPage() {
     $wpdb->query("DELETE FROM $table_name WHERE user_id='$del_id'");
     echo "<script>location.replace('admin.php?page=crud.php');</script>";
   }
-
-
   ?>
   <div class="wrap">
     <h2>CRUD Operations</h2>
