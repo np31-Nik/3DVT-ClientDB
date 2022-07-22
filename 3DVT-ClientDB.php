@@ -96,3 +96,10 @@ function client_menu_add(){
     include "addClient.php";
 }
 
+function client_menu_list(){
+    include "test.php";
+}
+
+function client_menu_add(){
+    include "test.php";
+}
