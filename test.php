@@ -1,5 +1,11 @@
 <?php
 
+/**
+
+Version: 1.0.14
+
+*/
+
 register_activation_hook( __FILE__, 'crudOperationsTable');
 function crudOperationsTable() {
   global $wpdb;
