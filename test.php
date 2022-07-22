@@ -115,10 +115,4 @@ function crudAdminPage() {
   <?php
 }
 
-function client_menu_list(){
-    include "clients.php";
-}
 
-function client_menu_add(){
-    include "addClient.php";
-}
