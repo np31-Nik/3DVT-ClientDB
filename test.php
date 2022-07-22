@@ -1,9 +1,13 @@
 <?php
 
 /**
-
+ * @package 3DVT
+ */
+ /*
+Plugin Name: 3DVT Clients Database
+Description: Custom client database for agency Costa Soñada.
 Version: 1.0.14
-
+Author: Costa Soñada
 */
 
 register_activation_hook( __FILE__, 'crudOperationsTable');
