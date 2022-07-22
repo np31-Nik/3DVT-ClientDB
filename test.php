@@ -1,13 +1,5 @@
 <?php
-/*
-Plugin Name: CRUD Operations
-Plugin URI: https://www.davidangulo.xyz/wp/portfolio/
-Description: A simple plugin that allows you to perform Create (INSERT), Read (SELECT), Update and Delete operations.
-Version: 1.0.0
-Author: David Angulo
-Author URI: https://www.davidangulo.xyz/wp/
-License: GPL2
-*/
+
 register_activation_hook( __FILE__, 'crudOperationsTable');
 function crudOperationsTable() {
   global $wpdb;
