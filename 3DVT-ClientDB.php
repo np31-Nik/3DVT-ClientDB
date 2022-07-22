@@ -95,8 +95,3 @@ function client_menu_list(){
 function client_menu_add(){
     include "addClient.php";
 }
-
-function testPhp(){
-    include "test.php";
-}
-
