@@ -20,7 +20,7 @@ function crudOperationsTable() {
 }
 add_action('admin_menu', 'addAdminPageContent');
 function addAdminPageContent() {
-  add_menu_page('CRUD', 'CRUD', 'manage_options' ,__FILE__, 'crudAdminPage', 'dashicons-wordpress');
+  add_menu_page('CRUD', 'CRUD', 'manage_options' ,'crud_menu' 'crudAdminPage', 'dashicons-wordpress');
 }
 function crudAdminPage() {
   global $wpdb;
