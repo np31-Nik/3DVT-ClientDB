@@ -1,11 +1,15 @@
 <?php 
-
+$message = "";
+if(isset($_POST['SubmitButton'])){ //check if form was submitted
+  $input = $_POST['inputText']; //get input text
+  $message = "Success! You entered: ".$input;
+}   
 ?>
 
 <header>
 <div id="searchBar">
     <h1>Búsqueda:</h1>
-    <form role="search" method="get" class="search-form" action="http://3dvirtualinmo.es/wp-admin/admin.php?page=client_menu">
+    <form role="search" method="get" class="search-form" action="">
 
     <label>Nombre de cliente:</label>
     <input type="text" name="name" value=""/>
@@ -20,7 +24,11 @@
 
     <label>Captado por:</label>
     <input type="text" name="captado" value="">
+
     <input type="submit" class="searchsubmit" value="Search" />
+
+    <br>
+    <?php echo $message; ?>
     </form>
 
 
