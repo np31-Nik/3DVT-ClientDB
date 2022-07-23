@@ -4,7 +4,7 @@ if(isset($_POST['SubmitButton'])){ //check if form was submitted
   $name = $_POST['name']; //get input text
   $tipo = $_POST['operationType'];
   $captado =$_POST['captado'];
-  $message = "Searching for: [Nombre: ".$name." ,tipo: ".$tipo." ,captado por: ".$captado."]";
+  $message = "...Searching for: | Nombre: ".$name." | Tipo: ".$tipo." | Captado: ".$captado." |";
 }   
 ?>
 
