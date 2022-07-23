@@ -42,7 +42,7 @@ function searchClients($name,$tipo,$captado){
 
     $sql = "SELECT * FROM ".$table.$conditions;
 
-    $results = $wpdb->get_results($sql);
+    //$results = $wpdb->get_results($sql);
 }
 ?>
 
