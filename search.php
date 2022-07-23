@@ -25,7 +25,7 @@ if(isset($_POST['SubmitButton'])){ //check if form was submitted
     <label>Captado por:</label>
     <input type="text" name="captado" value="">
 
-    <input type="submit" class="searchsubmit" value="Search" />
+    <input type="submit" name="SubmitButton" />
 
     <br>
     <?php echo $message; ?>
