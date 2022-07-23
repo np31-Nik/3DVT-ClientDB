@@ -5,7 +5,7 @@
 <header>
 <div id="searchBar">
     <h1>Búsqueda:</h1>
-    <form role="search" method="get" class="search-form" action="">
+    <form role="search" method="get" class="search-form" action="http://3dvirtualinmo.es/wp-admin/admin.php?page=client_menu">
 
     <label>Nombre de cliente:</label>
     <input type="text" name="name" value=""/>
