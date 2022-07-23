@@ -1,8 +1,10 @@
 <?php 
 $message = "";
 if(isset($_POST['SubmitButton'])){ //check if form was submitted
-  $input = $_POST['inputText']; //get input text
-  $message = "Success! You entered: ".$input;
+  $name = $_POST['name']; //get input text
+  $tipo = $_POST['operationType'];
+  $captado =$_POST['captado'];
+  $message = "Searching for: [Nombre: ".$name." ,tipo: ".$tipo." ,captado por: ".$captado."]";
 }   
 ?>
 
