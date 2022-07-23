@@ -1,24 +1,29 @@
-<?php get_search_form(); ?>
+<?php 
 
+?>
 
+<header>
 <div id="searchBar">
-<h1>search bar</h1>
-<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-    <label>
-        <span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ) ?></span>
-        <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search …', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
-    </label>
-    <label for="color">Background Color:</label>
-<select name="color" id="color">
-	<option value="">--- Choose a color ---</option>
-	<option value="red">Red</option>
-	<option value="green">Green</option>
-	<option value="blue">Blue</option>
-</select>
-    <input type="submit" class="search-submit" value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>" />
-</form>
+    <h1>Search:</h1>
+    <form role="search" method="get" class="search-form" action="">
 
+    <label>Nombre de cliente:</label>
+    <input type="text" name="name" value=""/>
 
+    <select name="operationType" id="opType">
+        <option value="">--- Tipo de operacion ---</option>
+        <option value="venta">Venta</option>
+        <option value="alquiler">Alquiler</option>
+        <option value="vacacional">Vacacional</option>
+        <option value="otros">Otros</option>
+    </select>
+
+    <label>Captado por:</label>
+    <input type="tex" name="captado" value="">
+
+        <input type="submit" class="searchsubmit" value="Search" />
+    </form>
 
 
 </div>
+</header>
