@@ -19,9 +19,9 @@
     </select>
 
     <label>Captado por:</label>
-    <input type="tex" name="captado" value="">
-
-        <input type="submit" class="searchsubmit" value="Search" />
+    <input type="text" name="captado" value="">
+    <br>   
+    <input type="submit" class="searchsubmit" value="Search" />
     </form>
 
 
