@@ -9,7 +9,7 @@ if(isset($_POST['SubmitButton'])){ //check if form was submitted
 <header>
 <div id="searchBar">
     <h1>Búsqueda:</h1>
-    <form role="search" method="get" class="search-form" action="">
+    <form role="search" method="post" class="search-form" action="">
 
     <label>Nombre de cliente:</label>
     <input type="text" name="name" value=""/>
