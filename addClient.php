@@ -2,6 +2,11 @@
 
 global $wpdb;
 
+if(isset($_POST['SubmitButton'])){ //check if form was submitted
+    include "editClient.php";
+}
+
+
 //add Client
 if(isset($_POST['but_submit'])){
 
@@ -17,6 +22,9 @@ if(isset($_POST['but_submit'])){
     //Insert client data
 
 }
+
+
+  
 
 ?>
 
@@ -65,6 +73,10 @@ if(isset($_POST['but_submit'])){
         <tr>
             <td>&nbsp;</td>
             <td><input type='submit' name='but_submit' value='Submit'></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <input type="submit" name="SubmitButton" value="Edit Client test"/>
         </tr>
     </table>
 </form>
