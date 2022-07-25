@@ -3,8 +3,8 @@
 global $wpdb;
 
 if(isset($_POST['SubmitButton'])){ //check if form was submitted
-    echo '<a href="'.plugin_dir_path( __FILE__ ).'/editClient.php">Edit</a>';
 
+    echo '<a href="'.plugins_url('3DVT-ClientDB/editClient.php').'">Edit 2</a>';
 }
 
 
