@@ -3,7 +3,7 @@
 global $wpdb;
 
 if(isset($_POST['SubmitButton'])){ //check if form was submitted
-    include "editClient.php";
+    echo '<a href="'.get_template_directory_uri().'/editClient.php">New Page</a>';
 }
 
 
