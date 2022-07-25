@@ -55,7 +55,7 @@ if(isset($_POST['but_submit'])){
 ?>
 
 <h1>Edit Client</h1>
-<form action='post' style="margin: auto;" action='' >
+<!-- <form action='post' style="margin: auto;" action='' >
     <table>
         <tr>
             <td>Name</td>
@@ -101,4 +101,4 @@ if(isset($_POST['but_submit'])){
             <td><input type='submit' name='but_submit' value='Submit'></td>
         </tr>
     </table>
-</form>
+</form> -->
