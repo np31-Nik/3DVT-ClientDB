@@ -29,11 +29,11 @@ if(isset($_POST['but_submit'])){
 ?>
 
 <h1>Add New Client</h1>
-
+<!-- 
     <form action="" method="POST">
         <input type="submit" name="SubmitButton" value="Edit Client test"/>
-    </form>
-
+    </form> -->
+    <a href="'.plugin_dir_path( __FILE__ ).'/editClient.php">Edit</a>
 <form action='post' style="margin: auto;" action='' >
     <table>
         <tr>
