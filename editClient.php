@@ -37,20 +37,20 @@ global $wpdb;
 //    }
 // }
 // //edit Client
-if(isset($_POST['but_submit'])){
+// if(isset($_POST['but_submit'])){
 
-    $name = $_POST['txt_name'];
-    $phone = $_POST['txt_phone'];
-    $email = $_POST['txt_email'];
-    $opertaion = $_POST['enum_opertaions'];
-    $found = $_POST['txt_found'];
-    $date = $_POST['date_date'];
-    $comment = $_POST['txt_comment'];
+//     $name = $_POST['txt_name'];
+//     $phone = $_POST['txt_phone'];
+//     $email = $_POST['txt_email'];
+//     $opertaion = $_POST['enum_opertaions'];
+//     $found = $_POST['txt_found'];
+//     $date = $_POST['date_date'];
+//     $comment = $_POST['txt_comment'];
 
-    //validate (with if?)
-    //Edit client data
+//     //validate (with if?)
+//     //Edit client data
 
-}
+// }
 
 ?>
 
