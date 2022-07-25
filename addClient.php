@@ -2,9 +2,9 @@
 
 global $wpdb;
 
-// if(isset($_POST['submit'])){ //check if form was submitted
-//     include "editClient.php";
-// }
+if(isset($_POST['SubmitButton'])){ //check if form was submitted
+    include "editClient.php";
+}
 
 
 //add Client
@@ -29,9 +29,10 @@ if(isset($_POST['but_submit'])){
 ?>
 
 <h1>Add New Client</h1>
-<form action="editClient.php" method="POST">
-      <input type="submit"/>
-</form>
+
+    <form action="" method="POST">
+        <input type="submit" name="SubmitButton" value="Edit Client test"/>
+    </form>
 
 <form action='post' style="margin: auto;" action='' >
     <table>
@@ -78,5 +79,6 @@ if(isset($_POST['but_submit'])){
             <td>&nbsp;</td>
             <td><input type='submit' name='but_submit' value='Submit'></td>
         </tr>
+
     </table>
 </form>
