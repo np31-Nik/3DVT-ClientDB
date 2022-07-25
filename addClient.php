@@ -43,10 +43,10 @@ if(isset($_POST['but_submit'])){
             <td><label for='enum_opertaions'>Opertaion</label></td>
             <td>
                 <select name="enum_opertaions" id="operations">
-                    <option value="sale">Sale</option>
-                    <option value="rent">Rent</option>
-                    <option value="holiday">Holiday</option>
-                    <option value="other">Other</option>
+                    <option value="venta">Sale</option>
+                    <option value="alquiler">Rent</option>
+                    <option value="vacacional">Holiday</option>
+                    <option value="otros">Other</option>
                 </select>
             </td>
         </tr>
