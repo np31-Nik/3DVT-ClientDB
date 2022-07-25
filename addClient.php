@@ -3,7 +3,8 @@
 global $wpdb;
 
 if(isset($_POST['SubmitButton'])){ //check if form was submitted
-    echo '<a href="'.get_template_directory_uri().'/editClient.php">New Page</a>';
+    echo '<a href="'.plugin_dir_path( __FILE__ ).'/editClient.php">Edit</a>';
+
 }
 
 
@@ -29,11 +30,10 @@ if(isset($_POST['but_submit'])){
 ?>
 
 <h1>Add New Client</h1>
-<!-- 
+
     <form action="" method="POST">
         <input type="submit" name="SubmitButton" value="Edit Client test"/>
-    </form> -->
-    <a href="'.plugin_dir_path( __FILE__ ).'/editClient.php">Edit</a>
+    </form>
 <form action='post' style="margin: auto;" action='' >
     <table>
         <tr>
