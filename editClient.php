@@ -2,41 +2,41 @@
 
 global $wpdb;
 
-$entriesList = $wpdb->get_results("SELECT * FROM ".$tablename." order by id desc");
-  if(count($entriesList) > 0){
-    $count = 1;
-    foreach($entriesList as $entry){
-      $id = $entry->id;
-      $name = $entry->name;
-      $phone = $entry->phone;
-      $email = $entry->email;
-      $languages = $entry->languages;
-      $opertaion = $entry->operation;
-      $found = $entry->found;
-      $date = $entry->date;
-      $comment = $entry->comment;
+// $entriesList = $wpdb->get_results("SELECT * FROM ".$tablename." order by id desc");
+//   if(count($entriesList) > 0){
+//     $count = 1;
+//     foreach($entriesList as $entry){
+//       $id = $entry->id;
+//       $name = $entry->name;
+//       $phone = $entry->phone;
+//       $email = $entry->email;
+//       $languages = $entry->languages;
+//       $opertaion = $entry->operation;
+//       $found = $entry->found;
+//       $date = $entry->date;
+//       $comment = $entry->comment;
 
-    //not sure about $count
-      echo "<tr>
-      <td>".$count."</td> 
-      <td>".$name."</td>
-      <td>".$phone."</td>
-      <td>".$email."</td>
-      <td>".$languages."</td>
-      <td>".$opertaion."</td>
-      <td>".$found."</td>
-      <td>".$date."</td>
-      <td>".$comment."</td>
+//     //not sure about $count
+//       echo "<tr>
+//       <td>".$count."</td> 
+//       <td>".$name."</td>
+//       <td>".$phone."</td>
+//       <td>".$email."</td>
+//       <td>".$languages."</td>
+//       <td>".$opertaion."</td>
+//       <td>".$found."</td>
+//       <td>".$date."</td>
+//       <td>".$comment."</td>
 
-      <td><a href='?page=allentries&delid=".$id."'>Delete</a></td>
-      <td><a href='?page=allentries&viewid=".$id."'>Detail</a></td>
-      <td><a href='?page=allentries&edid=".$id."'>Edit</a></td>
-      </tr>
-      ";
-      //detail and edit href not done!
-   }
-}
-//edit Client
+//       <td><a href='?page=allentries&delid=".$id."'>Delete</a></td>
+//       <td><a href='?page=allentries&viewid=".$id."'>Detail</a></td>
+//       <td><a href='?page=allentries&edid=".$id."'>Edit</a></td>
+//       </tr>
+//       ";
+//       //detail and edit href not done!
+//    }
+// }
+// //edit Client
 if(isset($_POST['but_submit'])){
 
     $name = $_POST['txt_name'];
