@@ -2,60 +2,56 @@
 
 global $wpdb;
 
-// $entriesList = $wpdb->get_results("SELECT * FROM ".$tablename." order by id desc");
-//   if(count($entriesList) > 0){
-//     $count = 1;
-//     foreach($entriesList as $entry){
-//       $id = $entry->id;
-//       $name = $entry->name;
-//       $phone = $entry->phone;
-//       $email = $entry->email;
-//       $languages = $entry->languages;
-//       $opertaion = $entry->operation;
-//       $found = $entry->found;
-//       $date = $entry->date;
-//       $comment = $entry->comment;
+$entriesList = $wpdb->get_results("SELECT * FROM ".$tablename." order by id desc");
+  if(count($entriesList) > 0){
+    
+    foreach($entriesList as $entry){
+      $id = $entry->id;
+      $name = $entry->name;
+      $phone = $entry->phone;
+      $email = $entry->email;
+      $languages = $entry->languages;
+      $opertaion = $entry->operation;
+      $found = $entry->found;
+      $date = $entry->date;
+      $comment = $entry->comment;
 
-//     //not sure about $count
-//       echo "<tr>
-//       <td>".$count."</td> 
-//       <td>".$name."</td>
-//       <td>".$phone."</td>
-//       <td>".$email."</td>
-//       <td>".$languages."</td>
-//       <td>".$opertaion."</td>
-//       <td>".$found."</td>
-//       <td>".$date."</td>
-//       <td>".$comment."</td>
+      echo "<tr>
+      <td>".$id."</td> 
+      <td>".$name."</td>
+      <td>".$phone."</td>
+      <td>".$email."</td>
+      <td>".$languages."</td>
+      <td>".$opertaion."</td>
+      <td>".$found."</td>
+      <td>".$date."</td>
+      <td>".$comment."</td>
 
-//       <td><a href='?page=allentries&delid=".$id."'>Delete</a></td>
-//       <td><a href='?page=allentries&viewid=".$id."'>Detail</a></td>
-//       <td><a href='?page=allentries&edid=".$id."'>Edit</a></td>
-//       </tr>
-//       ";
-//       //detail and edit href not done!
-//    }
-// }
-// //edit Client
-// if(isset($_POST['but_submit'])){
+      </tr>
+      ";
 
-//     $name = $_POST['txt_name'];
-//     $phone = $_POST['txt_phone'];
-//     $email = $_POST['txt_email'];
-//     $opertaion = $_POST['enum_opertaions'];
-//     $found = $_POST['txt_found'];
-//     $date = $_POST['date_date'];
-//     $comment = $_POST['txt_comment'];
+   }
+}
+//edit Client
+if(isset($_POST['but_submit'])){
 
-//     //validate (with if?)
-//     //Edit client data
+    $name = $_POST['txt_name'];
+    $phone = $_POST['txt_phone'];
+    $email = $_POST['txt_email'];
+    $opertaion = $_POST['enum_opertaions'];
+    $found = $_POST['txt_found'];
+    $date = $_POST['date_date'];
+    $comment = $_POST['txt_comment'];
 
-// }
+    //validate (with if?)
+    //Edit client data
+
+}
 
 ?>
 
 <h1>Edit Client</h1>
-<!-- <form action='post' style="margin: auto;" action='' >
+<form action='post' style="margin: auto;" action='' >
     <table>
         <tr>
             <td>Name</td>
@@ -101,4 +97,4 @@ global $wpdb;
             <td><input type='submit' name='but_submit' value='Submit'></td>
         </tr>
     </table>
-</form> -->
+</form>
