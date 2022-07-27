@@ -2,10 +2,10 @@
 
 global $wpdb;
 
-if(isset($_POST['SubmitButton'])){ //check if form was submitted
+// if(isset($_POST['SubmitButton'])){ //check if form was submitted
 
-    echo '<a href="'.plugins_url('3DVT-ClientDB/editClient.php').'">Edit 2</a>';
-}
+//     echo '<a href="'.plugins_url('3DVT-ClientDB/editClient.php').'">Edit 2</a>';
+// }
 
 
 //add Client
@@ -31,9 +31,9 @@ if(isset($_POST['but_submit'])){
 
 <h1>Add New Client</h1>
 
-    <form action="" method="POST">
+    <!-- <form action="" method="POST">
         <input type="submit" name="SubmitButton" value="Edit Client test"/>
-    </form>
+    </form> -->
 <form action='post' style="margin: auto;" action='' >
     <table>
         <tr>
