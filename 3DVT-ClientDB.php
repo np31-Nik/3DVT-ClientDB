@@ -8,8 +8,6 @@ Description: Custom client database for agency Costa Soñada.
 Version: 1.0.51
 Author: Costa Soñada
 */
-$path = preg_replace('/wp-content.*$/','',__DIR__);
-include($path.'wp-load.php');
 
 
 //If someone tries to access this besides Wordpress, it exits.
