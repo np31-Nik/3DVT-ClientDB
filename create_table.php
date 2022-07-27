@@ -4,7 +4,7 @@ global $wpdb;
 
 function create_table() {
 $table_name = $wpdb->prefix."3dvt_clients";
-$charset_collate=$wpdb->get_charset_collate();
+//$charset_collate=$wpdb->get_charset_collate(); //Error: Call to a member function get_charset_collate() on null
 
 $sql = "CREATE TABLE IF NOT EXISTS ".$table_name." (
     PRIMARY KEY id INTEGER(10) NOT NULL AUTO_INCREMENT,
@@ -15,7 +15,7 @@ $sql = "CREATE TABLE IF NOT EXISTS ".$table_name." (
     found varchar(20) NOT NULL,
     date date NOT NULL,
     comment varchar(255) NOT NULL
-    ) $charset_collate;";
+    ) ";
 //) $charset_collate;";
     require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
     dbDelta($sql);
